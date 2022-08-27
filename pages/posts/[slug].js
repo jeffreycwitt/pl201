@@ -30,7 +30,7 @@ export default function PostPage({ source, frontMatter }) {
     <Layout>
       <header>
         <nav>
-          <Link href="/">
+          <Link href="/pl201">
             <a>👈 Go back home</a>
           </Link>
         </nav>
