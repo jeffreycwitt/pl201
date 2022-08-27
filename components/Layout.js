@@ -4,8 +4,9 @@ export default function Layout({ children }) {
       <div className="wrapper">{children}</div>
       <style jsx>{`
         .wrapper {
-          max-width: 36rem;
-          margin: 0 auto;
+          max-width: 750px;
+          //margin: 0 auto;
+          margin-left: 100px;
           padding: 1.5rem;
         }
       `}</style>
@@ -22,8 +23,8 @@ export default function Layout({ children }) {
 
         html {
           font: 100%/1.5 system-ui;
+          margin-left: 20px;
         }
-
         a {
           color: inherit;
           text-decoration-color: var(--divider-color);
@@ -37,13 +38,13 @@ export default function Layout({ children }) {
 
         h1,
         p {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1em;
         }
 
         code {
           font-family: 'Menlo';
         }
       `}</style>
-    </>
+    </> 
   )
 }

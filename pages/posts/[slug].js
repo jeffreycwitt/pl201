@@ -19,7 +19,9 @@ const components = {
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
-  TestComponent: dynamic(() => import('../../components/TestComponent')),
+  Question: dynamic(() => import('../../components/Question')),
+  Answer: dynamic(() => import('../../components/Answer')),
+  QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
   Head,
 }
 
@@ -39,8 +41,8 @@ export default function PostPage({ source, frontMatter }) {
           <p className="description">{frontMatter.description}</p>
         )}
       </div>
-      <main>
-        <MDXRemote {...source} components={components} />
+      <main className="main">
+        <MDXRemote {...source} components={components} date={frontMatter.date}/>
       </main>
 
       <style jsx>{`
@@ -53,6 +55,10 @@ export default function PostPage({ source, frontMatter }) {
         }
         .description {
           opacity: 0.6;
+        }
+        .main {
+          max-width: 800px;
+          font-size: 26px;
         }
       `}</style>
     </Layout>
