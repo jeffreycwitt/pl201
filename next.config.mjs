@@ -6,7 +6,7 @@
     loader: 'akamai',
     path: '',
   },
-  assetPrefix: './pl201',
+  assetPrefix: '/pl201/',
   basePath: '/pl201',
 };
 
