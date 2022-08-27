@@ -4,7 +4,8 @@
     "dev": "next",
     "dev:watch": "next-remote-watch ./posts",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
@@ -13,6 +14,5 @@
     "next-remote-watch": "1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "export": "next export"
+  }
 }
