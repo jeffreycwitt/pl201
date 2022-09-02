@@ -8,6 +8,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@babylonjs/core": "^5.22.1",
     "gray-matter": "^4.0.2",
     "next": "latest",
     "next-mdx-remote": "^3.0.1",
