@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Engine, Scene } from "@babylonjs/core";
 
-export const SceneComponent = ({ antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady, ...rest}) => {
+export default function SceneComponent({ antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady, ...rest}) {
   const reactCanvas = useRef(null);
   useEffect(() => {
     reactCanvas.current.addEventListener('wheel', evt => evt.preventDefault());

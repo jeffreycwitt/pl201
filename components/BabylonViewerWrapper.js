@@ -1,6 +1,6 @@
 import React from "react";
 import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, ArcRotateCamera} from "@babylonjs/core";
-import {SceneComponent} from "./SceneComponent"; // uses above component in same directory
+import SceneComponent from "./SceneComponent"; // uses above component in same directory
 // import SceneComponent from 'babylonjs-hook'; // if you install 'babylonjs-hook' NPM.
 
 let box;
@@ -216,8 +216,9 @@ boxes9[i].position.z = -1
   return scene;
 }
 
-export default () => (
+export default function BabylonViewerWrapper(){
+  return (
   <div>
     <SceneComponent antialias onSceneReady={createScene} onRender={onRender} id="my-canvas" />
   </div>
-);
+)};
