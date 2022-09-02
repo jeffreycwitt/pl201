@@ -46,7 +46,7 @@ const onRender = (scene) => {
 };
 
 
-const createScene =  async (scene) => {
+const createScene = (scene) => {
   //const scene = new Scene(engine);
 
   const camera = new ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 50, new Vector3(0, 0, 0), scene);
@@ -212,7 +212,7 @@ boxes9[i].position.z = -1
 // const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 50, 
 // sideOrientation: BABYLON.Mesh.DOUBLESIDE, frontUVs: f, backUVs: b});
 
-  var xr = await scene.createDefaultXRExperienceAsync();
+  //var xr = await scene.createDefaultXRExperienceAsync();
   return scene;
 }
 
