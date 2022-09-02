@@ -24,7 +24,7 @@ const components = {
   Question: dynamic(() => import('../../components/Question')),
   Answer: dynamic(() => import('../../components/Answer')),
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
-  BabylonViewerWrapper: dynamic(() => import('../../components/BabylonViewerWrapper')),
+  BabylonViewerWrapper: dynamic(() => import('../../components/BabylonViewerWrapper'), {ssr: false}),
   Head,
   Image,
   
