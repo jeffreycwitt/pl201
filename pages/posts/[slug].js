@@ -10,7 +10,7 @@ import CustomLink from '../../components/CustomLink'
 import Layout from '../../components/Layout'
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
 import Image from 'next/image';
-import BabylonViewerWrapper from "../../components/BabylonViewerWrapper"
+//import BabylonViewerWrapper from "../../components/BabylonViewerWrapper"
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -24,7 +24,7 @@ const components = {
   Question: dynamic(() => import('../../components/Question')),
   Answer: dynamic(() => import('../../components/Answer')),
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
-  BabylonViewerWrapper,
+  //BabylonViewerWrapper,
   Head,
   Image,
   
