@@ -45,8 +45,5 @@ export default function SceneComponent({ antialias, engineOptions, adaptToDevice
     };
   }, [antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady]);
 
-  return 
-  (
-    <canvas ref={reactCanvas} {...rest} style={{width: "100%", height: "500px"}} />
-  );
+  return <canvas ref={reactCanvas} {...rest} style={{width: "100%", height: "500px"}} />;
 };
