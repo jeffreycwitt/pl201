@@ -6,7 +6,7 @@ export default function Layout({ children }) {
         .wrapper {
           max-width: 750px;
           //margin: 0 auto;
-          margin-left: 100px;
+          margin-left: 1%;
           padding: 1.5rem;
         }
       `}</style>

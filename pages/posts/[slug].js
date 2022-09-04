@@ -10,7 +10,7 @@ import CustomLink from '../../components/CustomLink'
 import Layout from '../../components/Layout'
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
 import Image from 'next/image';
-//import BabylonViewerWrapper from "../../components/BabylonViewerWrapper"
+import {DiscussionInstructions} from "../../components/DiscussionInstructions"
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -24,6 +24,7 @@ const components = {
   Question: dynamic(() => import('../../components/Question')),
   Answer: dynamic(() => import('../../components/Answer')),
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
+  // ssr to false is really important to successful deploy build on github pages; it was NOT working without this.
   BabylonViewerWrapper: dynamic(() => import('../../components/BabylonViewerWrapper'), {ssr: false}),
   Head,
   Image,
@@ -33,19 +34,21 @@ const components = {
 export default function PostPage({ source, frontMatter }) {
   return (
     <Layout>
-      <header>
+      {/* <header>
         <nav>
           <Link href="/">
             <a>👈 Go back home</a>
           </Link>
         </nav>
-      </header>
+      </header> */}
       <div className="post-header">
         <h1>{frontMatter.title}</h1>
         {frontMatter.description && (
           <p className="description">{frontMatter.description}</p>
         )}
+        <DiscussionInstructions/>
       </div>
+      
       <main className="main">
         <MDXRemote {...source} components={components} date={frontMatter.date}/>
       </main>
@@ -60,10 +63,11 @@ export default function PostPage({ source, frontMatter }) {
         }
         .description {
           opacity: 0.6;
+          margin-bottom: 5px;
         }
         .main {
           max-width: 800px;
-          font-size: 26px;
+          font-size: 18px;
         }
       `}</style>
     </Layout>
