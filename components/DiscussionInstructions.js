@@ -66,7 +66,7 @@ export const DiscussionInstructions = () => {
       </p>
       <p>
       Weak participation (e.g. only 1 post, or posts lacking in "substance, interest, and relevance") will 
-      receive a "check minus" or an "80", strong participation will receive a "check" or a "100". 
+      receive a "check minus" or an "8", strong participation will receive a "check" or a "10". 
     </p>
     <h3>A Note on Question Types:</h3>
     
