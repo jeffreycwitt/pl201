@@ -20,7 +20,7 @@ export default function Answer(props) {
 }
   return (
     <>
-      <span className="answer-toggle" onClick={() => {setShowAnswer(!showAnswer)}}>{showAnswer ? "hide suggestion" : "show suggestion" + (props.releaseDate && " (TR)")}</span>
+      <span className="answer-toggle" onClick={() => {setShowAnswer(!showAnswer)}}>{showAnswer ? "hide suggestion" : "show suggestion" + (props.releaseDate ? " (TR)" : "")}</span>
       {showAnswer && <div className={"answer"}>
         <>
         {released ? props.children : <p>This is a time released suggestion and will be available after {releaseDateReadable}</p>}
