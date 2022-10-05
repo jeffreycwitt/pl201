@@ -26,6 +26,7 @@ const components = {
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
   // ssr to false is really important to successful deploy build on github pages; it was NOT working without this.
   BabylonViewerWrapper: dynamic(() => import('../../components/BabylonViewerWrapper'), {ssr: false}),
+  BabylonViewerWrapper2: dynamic(() => import('../../components/BabylonViewerWrapper2'), {ssr: false}),
   Head,
   Image,
   
