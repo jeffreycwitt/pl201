@@ -44,10 +44,8 @@ export default function PostPage({ source, frontMatter }) {
       </header> */}
       <div className="post-header">
         <h1>{frontMatter.title}</h1>
-        {frontMatter.description && (
-          <p className="description">{frontMatter.description}</p>
-        )}
-        <DiscussionInstructions/>
+        {/* {frontMatter.description && (<p className="description">{frontMatter.description}</p>)} */}
+        {/* <DiscussionInstructions/> */}
       </div>
       
       <main className="main">
