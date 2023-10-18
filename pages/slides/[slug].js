@@ -23,6 +23,7 @@ const components = {
   // See the notes in README.md for more details.
   Slide: dynamic(() => import('../../components/Slide')),
   Answer: dynamic(() => import('../../components/Answer')),
+  HiddenBlock: dynamic(() => import('../../components/HiddenBlock')),
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
   // ssr to false is really important to successful deploy build on github pages; it was NOT working without this.
   // BabylonViewerWrapper: dynamic(() => import('../../components/BabylonViewerWrapper'), {ssr: false}),
