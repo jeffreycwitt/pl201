@@ -11,10 +11,10 @@ export default function Layout({ children }) {
         }
       `}</style>
       <style jsx global>{`
-        * {
-          margin: 0;
-          padding: 0;
-        }
+        // * {
+        //   margin: 0;
+        //   padding: 0;
+        // }
 
         :root {
           --site-color: royalblue;
