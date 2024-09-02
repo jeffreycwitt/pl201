@@ -49,7 +49,10 @@ export default function PostPage({ source, frontMatter }) {
       </div>
       
       <main className="main">
-        <MDXRemote {...source} components={components} date={frontMatter.date}/>
+        {frontMatter.published ?
+          <MDXRemote {...source} components={components} date={frontMatter.date}/>
+        : <span>Questions Not Yet Released</span> 
+        }
       </main>
 
       <style jsx>{`
