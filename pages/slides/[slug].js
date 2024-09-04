@@ -22,6 +22,7 @@ const components = {
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
   Slide: dynamic(() => import('../../components/Slide')),
+  Slides: dynamic(() => import('../../components/Slides')),
   Answer: dynamic(() => import('../../components/Answer')),
   HiddenBlock: dynamic(() => import('../../components/HiddenBlock')),
   QuestionBlock: dynamic(() => import('../../components/QuestionBlock')),
