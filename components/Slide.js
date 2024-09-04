@@ -7,7 +7,7 @@ export default function Slide(props) {
     <div className={"slide " + props.number}>
       {props.children}
       <style jsx>{`
-        .slide { width: 80%; height: 90vh; align-items: center; justify-content: center; font-size: 1.75em; border-bottom: .5px dotted black; padding: 20px 10%; overflow: scroll }
+        .slide { width: 80%; height: 90vh; align-items: center; justify-content: center; font-size: 1.75em; padding: 20px 10%; overflow: scroll }
       `}</style>
     </div>
   )
