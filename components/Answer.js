@@ -7,11 +7,10 @@ export default function Answer(props) {
   if (props.releaseDate){
     released = props.releaseDate > currentDate ? false : true
   }
-  const newReleaseDate = new Date(props.releaseDate)
+  const newReleaseDate = props.releaseDate && new Date(props.releaseDate)
   let releaseDateReadable;
 
   if (typeof newReleaseDate === 'object' && newReleaseDate !== null && 'toLocaleDateString' in newReleaseDate) {
-
     console.log("The data type is", typeof newReleaseDate)
     // Print the locale representation of Date string
     console.log(newReleaseDate.toLocaleDateString('en-US'))
