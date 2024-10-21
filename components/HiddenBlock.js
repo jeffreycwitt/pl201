@@ -5,7 +5,7 @@ export default function HiddenBlock(props) {
   const starterText = props.starterText || "__________________"
   return (
     <>
-      <p className="answer-toggle" onClick={() => {setShowAnswer(!showAnswer)}}>{showAnswer ? props.text : starterText}</p>
+      <p className="answer-toggle" onClick={() => {setShowAnswer(!showAnswer)}}>{showAnswer ? <span style={{"borderLeft": "1px solid red", "paddingLeft": "5px"}}>{props.text}</span> : starterText}</p>
       
       <style jsx>{`
         
@@ -16,6 +16,7 @@ export default function HiddenBlock(props) {
         }
         .answer p{
           margin-bottom: 0px;
+          
         }
         .answer-toggle{
           // font-size: 12px;
